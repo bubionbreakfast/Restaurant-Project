@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 
@@ -24,7 +24,6 @@ class BookingList extends Component {
     return(
       <div className="booking-selector">
         <Select
-        
         fullWidth={true}
         id="booking-selector" onChange={this.handleChange} value={this.state.selectedIndex} >
       <MenuItem disabled value={-1}>Choose a booking...</MenuItem>
