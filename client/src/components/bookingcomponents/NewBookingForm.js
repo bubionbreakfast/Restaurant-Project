@@ -147,36 +147,30 @@ class NewBookingForm extends Component {
                 /><br></br>
                 <TextField
                 fullWidth={true}
+                className="inputField"
 
                 type="time"
-                // defaultValue={time}
-                // placeholder={Date.now}
                 value={this.state.time}
                 onChange={this.handleTimeChange}
                 /><br></br>
                 <br></br>
                 <TextField
                 fullWidth={true}
-
                 type="number"
                 placeholder="Number of customers"
                 value={this.state.partySize}
                 onChange={this.handlePartySizeChange}
-
                 />
                 <br></br><br></br>
                 <TextField
                 fullWidth={true}
-
                 placeholder="Add notes"
                 value={this.state.notes}
                 onChange={this.handleNotesChange}/>
                 <br></br>
                 <InputLabel>Select a Customer</InputLabel>
-
                 <Select
                 fullWidth={true}
-
                 id="customer-booking-selector" onChange={this.handleCustomerChange} value={this.state.customerId} >
                 <MenuItem></MenuItem>
                 {customerOptions}
@@ -185,13 +179,11 @@ class NewBookingForm extends Component {
                 <InputLabel>Select a Table</InputLabel>
                 <Select
                 fullWidth={true}
-
                  id="seating-booking-selector" onChange={this.handleSeatingChange} value={this.state.seatingId} >
                 <MenuItem >Choose a seating...</MenuItem>
                 {seatingOptions}
                 </Select>
                 <br></br><br/>
-
                 <Button variant="contained" color="secondary" type="submit">Make A Booking</Button>
             </form>
             </div>
