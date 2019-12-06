@@ -93,8 +93,8 @@ class NewBookingForm extends Component {
          })
         return(
             <div className="booking-form">
-            <h3>New Booking Form</h3>
-            < br/>
+            {/* <h3>New Booking Form</h3> */}
+            {/* < br/> */}
             <form  onSubmit={this.handleSubmit}>
                 <TextField
                 fullWidth={true}

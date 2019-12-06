@@ -73,6 +73,8 @@ class BookingContainer extends Component {
             
             <div className="booking-container">
               <div className="new-booking">
+              <h3>New Booking</h3>
+
             <NewBookingForm
             onBookingSubmit={this.handleBookingSubmit}
             customers={this.state.customers}
@@ -81,7 +83,7 @@ class BookingContainer extends Component {
             </div>
 
             <div className="view-booking">
-            <h3>View a Booking </h3>
+            <h3>Find Bookings By Name</h3>
             <BookingList
             bookings={this.state.bookings}
             fullWidth={true}
@@ -90,25 +92,29 @@ class BookingContainer extends Component {
             </div>
 
             <div className="view-booking">
-            <h3 className="view-booking">Find Bookings By Date</h3>
             <BookingDetail
             booking={this.state.selectedBooking}
             onBookingSubmit={this.handleBookingSubmit}
             customers={this.state.customers}
             seatings={ this.state.seatings}
             />
+            </div>
+
+
+            <div className="view-booking">
+            <h3>Find Bookings By Date</h3>
             <TextField
             fullWidth={true}
             type="date"
             onChange={this.handleDateSelected}
             />
-            </div>
+            
           <ul>
             {foundBookingsItems}
-          </ul>
-          <p className="date-thing">
-            Available seats for selected day : {this.getTotalNumberOfCovers()}
-          </p>
+          </ul></div>
+          <div className="view-booking">
+            <h3>Available seats for selected day : {this.getTotalNumberOfCovers()}
+          </h3></div>
           </div>
       )
   }
