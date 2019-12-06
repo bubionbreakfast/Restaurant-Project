@@ -102,27 +102,21 @@
 }
 
 #home-images {
-  position:relative;
-  height:281px;
-  width:450px;
+  
+  width: 100%;
 }
 
 #home-images img {
-  width:  1300px;
-  height: 700px;
-  background-repeat:   no-repeat;
-  background-size:     cover;
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  100%;
+  
 }
-
+/* 
 #home-images img.top:hover {
   opacity:0;
-}
+} */
 
 #customer-form{
   height: 100%; /* Full-height: remove this if you want "auto" height */
