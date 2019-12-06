@@ -65,7 +65,7 @@ class BookingContainer extends Component {
   render() {
     const searchDate = this.state.searchDate
     const foundBookings = this.state.bookings.filter(booking => booking.date === searchDate)
-    const foundBookingsItems = foundBookings.map((foundBooking) => { return <li>{foundBooking._embedded.customer.name}: {foundBooking.time}</li> })
+    const foundBookingsItems = foundBookings.map((foundBooking) => { return <li key="index">{foundBooking._embedded.customer.name}: {foundBooking.time}</li> })
 
 
 
@@ -79,6 +79,7 @@ class BookingContainer extends Component {
             seatings={ this.state.seatings}
             />
             </div>
+
             <div className="view-booking">
             <h3>View a Booking </h3>
             <BookingList
@@ -87,18 +88,21 @@ class BookingContainer extends Component {
             onBookingSelected={this.handleBookingSelected}
             />
             </div>
+
+            <div className="view-booking">
+            <h3 className="view-booking">Find Bookings By Date</h3>
             <BookingDetail
-            bookin={this.state.selectedBooking}
+            booking={this.state.selectedBooking}
             onBookingSubmit={this.handleBookingSubmit}
             customers={this.state.customers}
             seatings={ this.state.seatings}
             />
-            <h3 className="view-booking">Find Bookings By Date</h3>
             <TextField
             fullWidth={true}
             type="date"
             onChange={this.handleDateSelected}
             />
+            </div>
           <ul>
             {foundBookingsItems}
           </ul>
