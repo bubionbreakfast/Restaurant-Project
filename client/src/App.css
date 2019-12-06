@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   margin-top: 10px;
+  margin-left: 1px;
 }
 
 *{
@@ -19,31 +20,28 @@
 
 #nav-bar{
   background-color: grey;
-  height: 30px;
-  width: 100%;
-  overflow: auto;
-  margin-top: 20px;
+  height: 45px;
+    margin-top: 20px;
+   display: flex;
+  align-items: center;
+  padding: 1%;
 }
 
 #nav-bar ul{
   background-color: black;
-  height: 50px;
-}
+  height: 45px;
+  }
 
 #nav-bar li{
   list-style-type: none;
-  float: left;
-  border-right: 1px solid white;
   text-align: center;
   width: 33%;
-  margin: 0 auto;
-}
+ }
 
 #nav-bar a{
   text-decoration: none;
   color: white;
-  line-height: 30px;
-  display: block;
+  line-height: 45px;
 }
 
 #nav-bar a:hover{
@@ -51,23 +49,21 @@
   color: black;
 }
 
-/* .booking-form{
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  /* width: 35%; Set the width of the sidebar */
-  /* position: fixed;  */
-  /* Fixed Sidebar (stay in place on scroll) */
-  /* background-color: white; /* Black */
-  /* overflow-x: hidden; Disable horizontal scroll */
-  /* padding-top: 20px;
-  margin-left: 30%; */ *
-/* }  */
+
 
 .container{
   margin-top: 30px;
   display: flex;
   display: inline-flex;
+}
 
-
+.customer-container{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .detail{
@@ -82,18 +78,12 @@
   color: #e61561;
 }
 
-/* #home-pic{
-  width: 900px;
-  padding: 30px;
-  position: relative;
-} */
-
 .header{
   margin: 30px;
 }
 
 .homeContainer{
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 #home-reservation-btn a{
@@ -102,67 +92,59 @@
 }
 
 #home-images {
-  position:relative;
-  height:281px;
-  width:450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
 }
 
 #home-images img {
-  width:  1300px;
-  height: 700px;
-  background-repeat:   no-repeat;
-  background-size:     cover;
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#home-images img.top:hover {
-  opacity:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  80%;
+  margin-top: 2%;
+  
 }
 
 #customer-form{
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px; /* Set the width of the sidebar */
-
   background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   padding-bottom: 20px;
-  /* padding-left: 5%; */
-  /* border: black solid 1px; */
+}
+
+.booking-form{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  background-color: white; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
 .customer-selector{
   padding-top: 20px;
-  /* padding-left: 5%; */
-/* padding-right: 5%; */
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px;
+
 }
 
 .booking-selector{
-  /* padding-top: 20px;
-  /* padding-left: 5%; */
-/* padding-right: 5%; */
-  /* height: 100%; /* Full-height: remove this if you want "auto" height */
-  /* width: 400px;
-  margin-left: 30%; */
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
 }
 
 .customer-list{
   padding-top: 20px;
   margin: 5%;
-  padding-left: 25%;
-
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px;
   text-decoration: none;
-
 }
 
 .customer-list-item{
@@ -171,16 +153,26 @@
 
 .booking-container{
   padding-top: 20px;
-  /* padding-left: 5%; */
-/* padding-right: 5%; */
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 400px;
-  margin-left: 33%;
-
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 100%; /*Full-height: remove this if you want "auto" height*/
+  /* width: 400px; */
+  /* margin-left: 33%; */
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
 .view-booking{
-  padding-top: 5%;
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
+}
+
+.new-booking{
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
 }
 
 .date-thing{
