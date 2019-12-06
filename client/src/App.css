@@ -41,7 +41,7 @@
 #nav-bar a{
   text-decoration: none;
   color: white;
-  line-height: 30px;
+  line-height: 45px;
 }
 
 #nav-bar a:hover{
@@ -103,7 +103,7 @@
   align-items: center;
   justify-content: center;
   width:  80%;
-
+  margin-top: 2%;
   
 }
 
