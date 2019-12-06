@@ -41,16 +41,25 @@ class CustomerContainer extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="customer-container">
         <div id="customer-form">
           <CustomerForm onCustomerSubmit={this.handleCustomerSubmit} />
         </div>
-        <div>
-          <CustomerSelector customers={this.state.customers} onCustomerSelected={this.handleCustomerSelected} />
-          <CustomerDetail customer={this.state.selectedCustomer} onCustomerDelete={this.handleCustomerDelete} />
+        <div id="customer-form">
+          <CustomerSelector
+          customers={this.state.customers}
+          onCustomerSelected={this.handleCustomerSelected}
+          />
+          <CustomerDetail
+          customer={this.state.selectedCustomer}
+          onCustomerDelete={this.handleCustomerDelete}
+          />
         </div>
-        <div>
-          <CustomerList customers={this.state.customers} onCustomerSelected={this.handleCustomerSelected} />
+        <div id="customer-form">
+          <CustomerList
+          customers={this.state.customers}
+          onCustomerSelected={this.handleCustomerSelected}
+          />
         </div>
       </div>
     )

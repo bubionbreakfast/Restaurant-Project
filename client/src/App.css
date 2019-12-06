@@ -49,21 +49,21 @@
   color: black;
 }
 
-/* .booking-form{
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  /* width: 35%; Set the width of the sidebar */
-  /* position: fixed;  */
-  /* Fixed Sidebar (stay in place on scroll) */
-  /* background-color: white; /* Black */
-  /* overflow-x: hidden; Disable horizontal scroll */
-  /* padding-top: 20px;
-  margin-left: 30%; */ *
-/* }  */
+
 
 .container{
   margin-top: 30px;
   display: flex;
   display: inline-flex;
+}
+
+.customer-container{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .detail{
@@ -110,7 +110,15 @@
 #customer-form{
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px; /* Set the width of the sidebar */
+  background-color: white; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.booking-form{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
   background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
@@ -122,21 +130,18 @@
   padding-top: 20px;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px;
+
 }
 
 .booking-selector{
-  /* padding-top: 20px;
-  /* padding-left: 5%; */
-/* padding-right: 5%; */
-  /* height: 100%; /* Full-height: remove this if you want "auto" height */
-  /* width: 400px;
-  margin-left: 30%; */
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
 }
 
 .customer-list{
   padding-top: 20px;
   margin: 5%;
-  padding-left: 25%;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 300px;
   text-decoration: none;
@@ -148,13 +153,26 @@
 
 .booking-container{
   padding-top: 20px;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 400px;
-  margin-left: 33%;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* height: 100%; Full-height: remove this if you want "auto" height */
+  /* width: 400px; */
+  /* margin-left: 33%; */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .view-booking{
-  padding-top: 5%;
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
+}
+
+.new-booking{
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px;
 }
 
 .date-thing{
