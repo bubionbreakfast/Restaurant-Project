@@ -3,6 +3,7 @@ import CustomerDetail from '../components/customercomponents/CustomerDetail'
 import CustomerList from '../components/customercomponents/CustomerList'
 import CustomerForm from '../components/customercomponents/CustomerForm'
 import CustomerSelector from '../components/customercomponents/CustomerSelector'
+import EditCustomerForm from '../components/customercomponents/EditCustomerForm'
 
 class CustomerContainer extends Component {
   constructor(props) {
@@ -52,8 +53,10 @@ class CustomerContainer extends Component {
           />
           <CustomerDetail
           customer={this.state.selectedCustomer}
-          onCustomerDelete={this.handleCustomerDelete}
+          onCustomerSelected={this.handleCustomerDelete}
+          
           />
+          
         </div>
         <div id="customer-form">
           <CustomerList
@@ -61,6 +64,10 @@ class CustomerContainer extends Component {
           onCustomerSelected={this.handleCustomerSelected}
           />
         </div>
+        <div className="edit-customer">
+          <EditCustomerForm />
+        </div>
+        
       </div>
     )
   }
