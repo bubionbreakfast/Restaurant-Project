@@ -68,6 +68,14 @@
 
 .detail{
   margin-top: 30px;
+  padding: 1%;
+
+}
+
+.customer-button{
+  display: flex;
+  align-content: space-around;
+  padding: 10px;
 }
 
 .detail li{

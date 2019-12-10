@@ -10,9 +10,10 @@ const CustomerDetail = ({ customer }) => {
       <p>{customer.name}</p>
       <p>{customer.phone}</p>
       <p>{customer.email}</p>
-      <Button variant="contained" color="secondary">Update Customer</Button>
+      <div className="customer-button">
+      <Button variant="contained" color="primary">Update Customer</Button>
       <Button variant="contained" color="secondary">Delete Customer</Button>
-    </div>
+    </div></div>
   )
 }
 
