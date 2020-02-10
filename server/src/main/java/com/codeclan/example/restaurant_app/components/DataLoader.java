@@ -71,6 +71,8 @@ public class DataLoader implements ApplicationRunner {
         Booking booking2 = new Booking("2019-11-03", "20:00", 4, "fourth member of the party is arriving approx half an hour late", customer2, seating2);
         bookingRepository.save(booking2);
 
+        Booking booking3 = new Booking("2020-2-11", "21:00", 3, "birthdayparty", customer6, seating4);
+
     }
 
 }
