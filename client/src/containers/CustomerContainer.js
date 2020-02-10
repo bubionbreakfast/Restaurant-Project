@@ -52,8 +52,8 @@ class CustomerContainer extends Component {
           onCustomerSelected={this.handleCustomerSelected}
           />
           <CustomerDetail
-          customer={this.state.selectedCustomer}
-          onCustomerSelected={this.handleCustomerDelete}
+          onCustomerSelected={this.state.selectedCustomer}
+          handleCustomerDelete={this.handleCustomerDelete}
           
           />
           
@@ -64,9 +64,12 @@ class CustomerContainer extends Component {
           onCustomerSelected={this.handleCustomerSelected}
           />
         </div>
-        <div className="edit-customer">
-          <EditCustomerForm />
-        </div>
+        {/* <div className="edit-customer">
+          <EditCustomerForm 
+          customers={this.state.customers}
+          onCustomerSelected={this.onCustomerSelected}
+          />
+        </div> */}
         
       </div>
     )
