@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 const Home = () => (
     <div className="homeContainer">
         <div id="home-pic-and_btn">
-          <h4 className="header">Welcome to Godfreya's!</h4>
+          <h4 className="header">Hi there! Welcome to Godfreya's! Bye There!</h4>
           <Button id="home-reservation-btn"
             variant="contained"
             color="secondary"
